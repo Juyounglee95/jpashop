@@ -13,7 +13,7 @@ public class MemberRepository {
 
     public Long save(Member member){
         em.persist(member);
-        return member.getId(); //command와 query 분
+        return member.getId(); //command와 query 분리
     }
 
     public Member find(Long id){
